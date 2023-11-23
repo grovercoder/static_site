@@ -77,12 +77,11 @@ class StaticSite:
 
     # re-generate the static site from scratch
     def generate(self, template=None):
-        print(self.__dict__)
         self.template = Template(name=template)
         self.resetBuildDir()
         self.buildHomePage()
         self.createPostPages()
         self.createStandardPages()
-        print(": Completed")
+        print("Done")
 
         
