@@ -1,5 +1,6 @@
 posts/*
 static/pages/*
+build
 
 # exceptions
 !posts/.gitkeep
