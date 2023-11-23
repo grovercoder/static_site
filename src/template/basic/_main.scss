@@ -126,7 +126,7 @@ main {
         grid-template-columns: 300px auto;
         grid-template-rows: auto;
         .sidebar {
-            // height: 95vh;
+            padding: 0;
             grid-template-areas: "title"
                                  "avatar"
                                  "bio"

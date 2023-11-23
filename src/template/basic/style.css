@@ -101,6 +101,7 @@ main .content {
     grid-template-rows: auto;
   }
   main .sidebar {
+    padding: 0;
     grid-template-areas: "title" "avatar" "bio" "links" "social";
     grid-template-columns: 300px;
     grid-template-rows: 50px 105px 4em 3em 3em;
