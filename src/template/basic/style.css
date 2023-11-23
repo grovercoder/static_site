@@ -1,58 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Play&family=Roboto&display=swap");
-#postList .post {
-  padding: 0.5em;
-  margin: 1em 0;
-  border: 1px solid #0f4c75;
-  border-radius: 5px;
-  box-shadow: 3px 5px 10px #1b262c;
-}
-#postList .post:nth-child(even) {
-  background-color: #a3d7f8;
-}
-#postList .post:nth-child(odd) {
-  background-color: #d3ebfc;
-}
-#postList .post .title {
-  border-bottom: 1px solid #0f4c75;
-}
-#postList .post .title h2 {
-  margin: 0;
-  font-size: 1.1em;
-  padding-bottom: 0.25em;
-}
-#postList .post .title h2 a {
-  color: #1b262c;
-  text-decoration: none;
-}
-#postList .post .title h2 a:hover {
-  text-decoration: underline;
-}
-#postList .post .meta {
-  font-size: 0.8em;
-  font-style: italic;
-}
-#postList .post .summary {
-  margin-top: 0.5em;
-}
-
 body {
   margin: 0;
   padding: 0;
-  background-color: aliceblue;
+  background-image: url(/img/background.webp);
+  background-size: 100vw 100vh;
   font-family: "Play", sans-serif;
   font-size: 14pt;
+  overflow: hidden;
 }
 
 main {
   position: relative;
-  max-width: 1024px;
+  max-width: 1440px;
   min-height: 90vh;
   margin: auto auto;
   border: 1px solid #1b262c;
   box-shadow: 3px 3px 10px #0f4c75;
   display: grid;
   grid-template-rows: auto auto;
+  overflow: hidden;
 }
 main .sidebar {
   background: linear-gradient(160deg, #125b8c 0%, #1b262c 30%, #425d6b 100%);
@@ -109,8 +76,15 @@ main .sidebar .social {
   text-align: center;
   margin: 1em 0;
 }
+main .main-content-container {
+  max-height: 95vh;
+  overflow: auto;
+}
 main .content {
-  padding: 1em;
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(200, 200, 200, 0.8)), url(/img/content-background.webp);
+  height: 95vh;
+  padding: 0 1em;
+  overflow-y: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -123,4 +97,39 @@ main .content {
     grid-template-columns: 300px;
     grid-template-rows: 50px 105px 4em 3em 3em;
   }
+}
+#postList .post {
+  padding: 0.5em;
+  margin: 1em 0;
+  border: 1px solid #0f4c75;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px #1b262c;
+}
+#postList .post:nth-child(even) {
+  background-color: #a3d7f8;
+}
+#postList .post:nth-child(odd) {
+  background-color: #d3ebfc;
+}
+#postList .post .title {
+  border-bottom: 1px solid #0f4c75;
+}
+#postList .post .title h2 {
+  margin: 0;
+  font-size: 1.1em;
+  padding-bottom: 0.25em;
+}
+#postList .post .title h2 a {
+  color: #1b262c;
+  text-decoration: none;
+}
+#postList .post .title h2 a:hover {
+  text-decoration: underline;
+}
+#postList .post .meta {
+  font-size: 0.8em;
+  font-style: italic;
+}
+#postList .post .summary {
+  margin-top: 0.5em;
 }/*# sourceMappingURL=style.css.map */
