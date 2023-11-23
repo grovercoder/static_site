@@ -1,3 +1,5 @@
+import string
+import random
 import pathlib
 import shutil
 import os
@@ -18,6 +20,9 @@ class StaticSite:
         self.static = static
         self.posts = Posts(source=posts)
         self.output = output
+
+    def _hash_generator(self, size=6, chars=string.ascii_uppercase + string.digits) :
+        return ''.join(random.choice(chars) for _ in range(size))
 
     def resetBuildDir(self):
         # remove build directory if it exists
