@@ -1,0 +1,41 @@
+@use "variables";
+
+#postList {
+
+    .post {
+        padding: 0.5em;
+        margin: 1em 0;
+        border: 1px solid variables.$theme-dark;
+        border-radius: 5px;
+        box-shadow: 3px 5px 10px variables.$theme-darker;
+
+        &:nth-child(even) {
+            background-color: darken(variables.$theme-lighter, 5%);
+        }
+        &:nth-child(odd) {
+            background-color: lighten(variables.$theme-lighter, 5%);
+        }
+
+        .title {
+            border-bottom: 1px solid variables.$theme-dark;
+            h2 {
+                margin: 0;
+                font-size: 1.1em;
+                padding-bottom: 0.25em;
+
+                a {
+                    color: variables.$theme-darker;
+                    text-decoration: none;
+                }
+            }
+        }
+        .meta {
+            font-size: 0.8em;
+            font-style:italic;
+        }
+        .summary {
+            margin-top: 0.5em;
+        }
+    }
+}
+
