@@ -25,6 +25,9 @@
   color: #1b262c;
   text-decoration: none;
 }
+#postList .post .title h2 a:hover {
+  text-decoration: underline;
+}
 #postList .post .meta {
   font-size: 0.8em;
   font-style: italic;
@@ -38,7 +41,7 @@ body {
   padding: 0;
   background-color: aliceblue;
   font-family: "Play", sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 main {
