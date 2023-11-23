@@ -22,9 +22,9 @@ Usage:
     python3 src/python/build.py -s ./static -p ./posts -t basic -o ./mysite
 ```
 
-    The `mysite` folder will be created and populated as needed.
+The `mysite` folder will be created and populated as needed.
 
-Posts / Static Pages
+## Posts / Static Pages
 
 A "front matter" section can be defined in the Markdown files to provide some meta information.  For example:
 
